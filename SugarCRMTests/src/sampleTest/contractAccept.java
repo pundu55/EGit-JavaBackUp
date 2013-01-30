@@ -19,10 +19,10 @@ public class contractAccept
 	public void setUp() throws Exception {
 		
 
-				//selenium.open("http://su-chrqa-a.homeoffice.anfcorp.com/anf-chr-forms-web/formsListing.action?EmplID=01860881&StoreNum=31292&language=en&iposUpdateURL=http://www.abercrombie.com");
+			
 			
 					//selenium.open("http://www.google.com");
-					selenium = new DefaultSelenium("localhost", 4444, "*googlechrome", "http://su-chrqa-a.homeoffice.anfcorp.com/");
+					selenium = new DefaultSelenium("localhost", 4444, "*googlechrome", "http://su-chrqa-p.com/");
 					//selenium.setSpeed("1000");
 			
 		}
@@ -41,7 +41,7 @@ public class contractAccept
 			//String formid = s.getCell(3,i).getContents();
 			selenium.start();
 			selenium.windowMaximize();
-		selenium.open("http://su-chrqa-a.homeoffice.anfcorp.com/anf-chr-forms-web/formsListing.action?EmplID="+emplid+"&StoreNum="+storenumber+"&language=en&iposUpdateURL=http://www.abercrombie.com");
+		selenium.open("http://suion?EmplID="+emplid+"&StoreNum="+storenumber+"&language=en&iposUp");
 		selenium.waitForPageToLoad("30000");
 		//selenium.click("xpath=(//a[contains(text(),'Click to open form')])[5]");
 		selenium.click("xpath=//tr[10]/td[3]/a[contains(text(),'Click to open form')]");
