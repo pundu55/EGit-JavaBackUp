@@ -18,10 +18,10 @@ public class jobApp39 {
 	public static void main(String[] args) throws InterruptedException {
 		
 		String emailAddress ="";
-		DefaultSelenium selenium = new DefaultSelenium("localhost", 4444, "*chrome", "http://su-chrqa-a.homeoffice.anfcorp.com/");
+		DefaultSelenium selenium = new DefaultSelenium("localhost", 4444, "*chrome", "http://su-crp.com/");
 		selenium.start();
 		selenium.windowMaximize();
-		selenium.open("http://su-chrqa-a.homeoffice.anfcorp.com/jobapp-web-lite/restart.action?brand=3&kiosk=&storeId=");
+		selenium.open("http://su-chrqa-=&storeId=");
 		selenium.windowMaximize();
 		
 		selenium.click("id=ctwrper");
